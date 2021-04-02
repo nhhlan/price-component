@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+h5
+{
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+.background
+{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(204, 43%, 93%);
+}
+.container
+{
+    max-width: 80vw;
+    width: calc(40vw + 3rem);
+    max-height: 80vh;
+    height: calc(65vh + 3rem);
+    border-radius: 8px;
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    overflow: hidden;
+}
+.description
+{
+    min-height: 45%;
+    height: auto;
+    width: 100%;
+    background: #fff;
+    padding: 2.5rem 2.5rem;
+}
+.description h3
+{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.description h5
+{
+    color: hsl(71, 73%, 54%);
+}
+.description p
+{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4rem;
+}
+.price
+{
+    min-height: 55%;
+    height: auto;
+    width: 50%;
+    background: rgba(42, 178, 175, 1.0);
+    padding: 1.5rem 2.5rem;
+    color: #fff;
+    line-height: 1.4rem;
+}
+.price span
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 1.4rem;
+}
+.price p
+{
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+.price a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    background: hsl(71, 73%, 54%);
+    padding: 0.75rem;
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px 1px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+.whyUs
+{
+    min-height: 55%;
+    height: auto;
+    width: 50%;
+    background: rgba(42, 178, 175, 0.7);
+    color: #fff;
+    padding: 1.5rem 2.5rem;
+}
+.whyUs ul
+{
+    list-style: none;
+}
+.whyUs ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 500px)
+{
+    html, body
+    {
+        font-size: 12px;
+    }
+    .container
+    {
+        width: 70%;
+        height: auto;
+    }
+    .description, .price, .whyUs
+    {
+        min-height: auto;
+        width: 100%;
+    }
+}
